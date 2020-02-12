@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import GithubUsers from "./components/GithubUsers";
+import GithubUser from "./components/GithubUser";
 import UserInput from "./components/UserInput";
 import axios from "axios";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -30,20 +31,23 @@ class App extends Component {
   }
 
   render() {
-    console.log("I am state", this.state);
+    // console.log("I am state", this.state);
     return (
-      <div className='container'>
-        <div className='row'>
-          <div className='col-5 mx-auto'>
+      <div className='container App'>
+        <div className=''>
+          <div className=''>
             <h1>Github Users</h1>
             <p>{this.state.myData.login}</p>
           </div>
-          <div className='col-10 mx-auto col-md-8 mt-5'>
-            <UserInput />
-          </div>
+
+          <UserInput />
         </div>
-        <GithubUsers followers={this.state.users} />
-        <div></div>
+
+        <div className='github-users'>
+          {this.state.followers.map(item => (
+            <GithubUser key={item.id} followers={item} />
+          ))}
+        </div>
       </div>
     );
   }
