@@ -1,15 +1,42 @@
 .App {
   text-align: center;
   width: 100%;
-  height: 100%;
+  min-height: 200vh;
   background-color: rgb(8, 57, 85);
 }
-.github-users {
-  width: 80%;
+.App-header {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  margin-top: 100px;
+  padding-top: 40px;
+
+}
+.my-card {
+  width: 50%;
+  min-height: 330px;
+  border-radius: 10px;
+  margin: 0 auto;
+  /* margin-bottom: 10px; */
+  background-color: #FFF7D6;
+}
+.inputCont {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-users {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 250vh;
+  justify-content: space-evenly;
+  min-height: 300vh;
+  margin-bottom: 40px;
 }

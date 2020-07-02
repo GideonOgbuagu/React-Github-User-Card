@@ -1,0 +1,25 @@
+.formCont {
+    width: 50%;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+}
+
+input {
+    width: 140%;
+    height: 40px;
+    border-radius: 0px;
+    border: 1px solid gray;
+}
+
+button {
+    width: 100px;
+    min-height: 40px;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
